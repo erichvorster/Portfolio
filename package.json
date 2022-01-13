@@ -1,11 +1,14 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "potfolio",
+  "description": "portfolio",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Erich Vorster",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "feather-icons": "^4.28.0"
+  }
 }

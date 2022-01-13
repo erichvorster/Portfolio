@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;700&family=Montserrat:wght@300;500;700&family=Poppins:wght@300;500;700&family=Rubik:wght@500;700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="path/to/dist/feather.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
 <title>Document</title>
 </head>
@@ -24,7 +25,6 @@
         <li class = link><a href="#"></a>About</li>
         <li class = link><a href="#"></a>Work</li>
         <li class = link><a href="#"></a>Projects</li>
-    
     </ul>
     <div class="burger">
         <div class="line1"></div>
@@ -36,8 +36,8 @@
 
     
 <!--HERO-->
-<section class = "hero">
-<div class="hero-container">
+<section class = "s1">
+ <div class="main-container">
    <div class ="hero-hello">
         <h1>Howzit ! , my name is</h1>
    </div>
@@ -53,35 +53,30 @@
    <div>
     <button class="button">Get in touch</button>
    </div>
-</div>
+ </div>
 </section> 
 
-<!-- ABOUT -->
-<Section>
-    <div class = about-container>
-        <div>
-            <h3>A bit about me</h3>
+<!--   (Benefits)-->
+<section class="s1">
+ <div class="main-container">
+    <h3>What I do</h3>
+      <div class="benefits">
+        <div class="benefit">
+            <h4>Web development</h3>
+            <i data-feather="airplay">archive</i>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur sint debitis consequuntur aut. Debitis cumque architecto quasi aspernatur. Animi molestiae eligendi perferendis in eius temporibus quam veniam. Voluptatibus, rerum ipsum.</p>
         </div>
-        <div >
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ullam voluptas, dolorem quidem sint nesciunt asperiores aperiam libero corrupti deserunt fuga tempore quam exercitationem nulla nobis officia reprehenderit quibusdam obcaecati. Omnis quis, cupiditate veniam atque impedit, reiciendis provident quidem vero, non asperiores aliquid libero. Esse, ratione ipsum maxime delectus perspiciatis non voluptatibus itaque. Expedita delectus beatae facere ex nisi, accusamus adipisci cumque explicabo voluptatum reprehenderit quae odio repellat pariatur ducimus in non. Assumenda, sunt doloribus. Ipsam assumenda, earum odit quae perspiciatis magnam, autem, aliquid sint aliquam delectus error cum ab saepe. Enim necessitatibus velit magnam. Iusto, accusantium eaque adipisci nesciunt fuga necessitatibus similique sequi rem nihil omnis nostrum dolores cupiditate beatae officiis provident! Voluptatum ad modi sint animi, mollitia vitae.</p>
+        <div class="benefit">
+            <h4>Web development</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur sint debitis consequuntur aut. Debitis cumque architecto quasi aspernatur. Animi molestiae eligendi perferendis in eius temporibus quam veniam. Voluptatibus, rerum ipsum.</p>
         </div>
-        <div>
-            <h3>Some of the technologies I work with:</h3>
+        <div class="benefit">
+            <h4>Web development</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur sint debitis consequuntur aut. Debitis cumque architecto quasi aspernatur. Animi molestiae eligendi perferendis in eius temporibus quam veniam. Voluptatibus, rerum ipsum.</p>
         </div>
-        <div class ="technologies">
-             <div class = "tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /></div>
-             <div class = "tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" /></div>
-             <div class = "tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" /></div>
-             <div class = "tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" /></div>
-             <div class = "tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" /></div>
-             <div class = "tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" /></div>
-        </div>
-        <div class="tech-paragraph">
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, quidem? Alias exercitationem quas nobis, qui quis, ad beatae nam veritatis ex expedita deleniti architecto id, deserunt perspiciatis non recusandae porro.</p>
-        </div>
-
-    </div>
-</Section>
+      </div>   
+ </div>
+</section>
 
 <!-- Projects -->
 
@@ -145,7 +140,9 @@
 </section>
 
 
-    
+<script>
+    feather.replace()
+  </script>
     <script src="index.js"> </script>
     
 </body>

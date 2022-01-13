@@ -6,29 +6,72 @@
 }
 
 body {
+  font-size: 62.5%;
   font-family: "Montserrat", sans-serif;
   background-color: #2d3032;
+  overflow-x: hidden;
 }
 
 h2 {
-  font-size: 60px;
+  font-size: 2.8rem;
+  color: #d2d3d3;
 }
 
 h3 {
-  color: #7d7f80;
-  font-size: 25px;
+  font-size: 2.2rem;
+  color: #d2d3d3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+h4 {
+  font-size: 1.8rem;
+  color: #9615db;
+}
+
+.s1 {
+  background-color: #2d3032;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 10% 0%;
+  margin-bottom: 10%;
+}
+
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  background-color: #2d3032;
 }
 
 p {
-  font-size: 18px;
+  font-size: 16px;
   color: #7d7f80;
+}
+
+i {
+  font-size: 30px;
+  color: white;
 }
 
 /*    NAV    */
@@ -86,62 +129,28 @@ nav {
 }
 
 /*     Hero     */
-.hero {
-  background-color: #2d3032;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 25%;
-}
-
-.hero .hero-container {
-  width: 1200px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 60px 40px;
-  background-color: #2d3032;
-}
-
-.hero .hero-container .hero-hello {
+.hero-hello {
   padding: 20px 0px;
   color: #9615db;
   font-family: "Inconsolata", sans-serif;
 }
 
-.hero .hero-container .hero-fullname {
+.hero-fullname {
   padding-bottom: 10px;
   color: #d2d3d3;
 }
 
-.hero .hero-container .hero-description {
+.hero-description {
   color: #7d7f80;
 }
 
-.hero .hero-container .hero-paragraph {
+.hero-paragraph {
   padding: 20px 0px 40px 0px;
   color: #7d7f80;
   max-width: 600px;
 }
 
-.hero .hero-container .button {
+.button {
   color: #9615db;
   background-color: #2d3032;
   height: 55px;
@@ -151,46 +160,24 @@ nav {
   font-size: 16px;
 }
 
-.hero .hero-container .button:hover {
+.button:hover {
   background-color: #7511ab;
 }
 
 /*  About Section  */
-.about-container {
-  width: 1200px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #2d3032;
+.about-heading {
+  padding-bottom: 5%;
+  position: relative;
+  color: #d2d3d3;
 }
 
-.technologies {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 80vw;
-  background-color: gold;
-}
-
-.tech {
-  height: 30px;
-  width: 30px;
+.about-heading:before {
+  content: "";
+  position: absolute;
+  background-color: #9615db;
+  height: 2px;
+  width: 70%;
+  top: 70%;
 }
 
 /* Projects section  */
@@ -366,19 +353,7 @@ nav {
 }
 
 @media screen and (max-width: 1024px) {
-  h2 {
-    font-size: 6vw;
-  }
-  .project-container {
-    width: 95%;
-  }
-  .hero-container {
-    width: 95%;
-  }
-  .about-container {
-    width: 95%;
-  }
-  .contact-container {
+  .main-container {
     width: 95%;
   }
 }
