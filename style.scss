@@ -29,7 +29,6 @@ h2 {
 h3 {
   font-size: 2.2rem;
   color: $white;
-  display: flex;
 }
 
 h4 {
@@ -37,12 +36,16 @@ h4 {
   color: $purple;
 }
 
+h5 {
+  font-size: 20px;
+}
+
 .s1 {
   background-color: $black;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10%;
+  margin-bottom: 40vh;
 }
 
 .main-container {
@@ -50,7 +53,6 @@ h4 {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: left;
   justify-content: center;
   padding: 20px;
   background-color: $black;
@@ -143,67 +145,93 @@ nav {
 }
 
 /*  About Section  */
-
+.about-content {
+  padding-bottom: 60px;
+}
 .about-heading {
-  padding-bottom: 5%;
-  position: relative;
-  color: $white;
+  padding-bottom: 40px;
+}
+.socials {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 60px;
+
+  .icons {
+    height: 40px;
+    width: auto;
+    color: white;
+  }
+}
+.about-img-container {
+  object-fit: cover;
+}
+.about-img {
+  max-width: 100%;
+  max-height: 100%;
+}
+/*  Projects Section  */
+
+.benefit-header {
+  text-align: center;
+  padding-bottom: 40px;
 }
 
-.about-heading:before {
-  content: "";
-  position: absolute;
-  background-color: $purple;
-  height: 2px;
-  width: 70%;
-  top: 70%;
-}
-
-/* Projects section  */
-
-.project-container {
-  width: 1200px;
-  margin: 0 auto;
-}
-
-.projects {
+.grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 320px);
   justify-content: center;
-  grid-gap: 1%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(200px);
+  padding: 20px;
+  grid-gap: 20px;
 }
 
-.post {
-  border: 1px solid;
+.grid-item {
+  border-width: 1px;
+  border-style: solid;
+  border-color: $dark-grey;
   border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.18);
+  transition: 0.2s;
 }
-.project-detail {
+
+.card {
   padding: 5%;
 }
 
-.thumbnail {
-  object-fit: contain;
-  width: 100%;
-  height: auto;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+.grid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 }
+.card-header {
+  padding: 10px 0px;
+}
+
+.card-text {
+  padding-bottom: 10px;
+}
+
+/*  About Section  */
+
+/* Projects section  */
 
 /* Contact section */
 
-.contact-container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 100px 0px;
+.contact-header {
+  text-align: center;
+  padding: 20px;
 }
-
+.contact-text {
+  text-align: center;
+  padding: 0px 40px 60px 40px;
+  color: $purple;
+}
 #contact-form {
   display: block;
   max-width: 600px;
   margin: 0 auto;
   border: 1px solid;
   border-radius: 5px;
-  padding: 15px;
+  padding: 20px;
   margin-bottom: 50px;
 }
 

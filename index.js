@@ -79,3 +79,24 @@ tl.from('.button', {
     opacity:0,
     x:'300px'
 },)
+
+// Body fade in animations
+
+gsap.registerPlugin(ScrollTrigger);
+
+
+gsap.from(".trigger1", {
+    scrollTrigger:".sneller1",
+    y:40,
+    ease: "power4",
+    duration:1.5,
+    opacity:0,
+    
+})
+gsap.from(".trigger2", {
+    scrollTrigger:".sneller2",
+    y:40,
+    ease: "power4",
+    duration:1.5,
+    opacity:0,
+})
